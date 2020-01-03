@@ -9,7 +9,7 @@ layout: col-sidebar
 {% for item in site.static_files %}
 {% assign fpath = item.path | lower %}
 {% if fpath contains '.pdf' %}
-<li><a href='{{item.path}}'>{{item.name}}</a></li>
+<li><a href='/www-pdf-archive/{{item.path}}'>{{item.name}}</a></li>
 {% endif %}
 {% endfor %}
 </ul>
